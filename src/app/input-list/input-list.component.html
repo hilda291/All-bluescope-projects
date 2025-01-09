@@ -1,0 +1,23 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #customerForm="ngForm">
+    <label for="Create">List form</label>
+    <br>
+<label for="name">Name :</label>
+<input 
+type="text"
+id="name"
+name="name"
+[(ngModel)]="ListjsonModule.name"
+>
+<label for="staus">Status :</label>
+<input 
+type="text"
+name="status"
+[(ngModel)]="ListjsonModule.status">
+
+<button type="submit">Submit</button>
+    </form>
+
+    <h2>Output :</h2>
+    <pre *ngIf="outputJson">{{outputJson}}</pre>
+</div>

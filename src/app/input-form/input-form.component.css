@@ -1,0 +1,62 @@
+.main
+
+{
+
+    align-items: center;
+
+    color:  #0be04b(72, 16, 85);
+
+    font-size: 20px;
+
+    text-decoration-color: rgb(72, 16, 85);
+
+    font-weight: 500;
+
+    height: 100%;
+
+    justify-content: space-around;
+
+    background-color: #f8f9fa; /* Light background color */
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #dee2e6;
+
+}
+
+.main div{
+
+    display: flex;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    padding: 10px 20px;
+
+    font-size: 16px;
+
+    color:  #d1b24c; /* Dark text color */
+
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+
+}
+
+.main div:hover {
+
+    background-color: #d7efde; /* Light hover background color */
+
+    color:  #c29a9a; /* Primary color for hover effect */
+
+}
+
+.main div.selected {
+
+    background-color: #dfe450;; /* Primary background color for selected item */
+
+    color: white; /* White text color for selected item */
+
+    font-weight: bold; /* Bold text for selected item */
+
+}
+

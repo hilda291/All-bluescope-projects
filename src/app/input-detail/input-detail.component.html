@@ -1,0 +1,18 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #customerForm="ngForm">
+    <label for="Create">Detail form</label>
+    <br>
+<label for="actionCode">Action code :</label>
+<input 
+type="text"
+id="actionCode"
+name="actionCode"
+[(ngModel)]="DetailjsonModule.actionCode">
+
+
+<button type="submit">Submit</button>
+    </form>
+
+    <h2>Output :</h2>
+    <pre *ngIf="outputJson">{{outputJson}}</pre>
+</div>

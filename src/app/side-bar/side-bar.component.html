@@ -1,0 +1,19 @@
+<div (click)="MethoddropDown('jsonToJson')" class="dropdown-toggle">
+  JSON to JSON Converter
+</div>
+
+<div *ngIf="dropdown === 'jsonToJson'" class="dropdown-content">
+  <div (click)="gotourl('create')" [class.selected]="url === '/create'"><h3>Create</h3></div>
+  <div (click)="gotourl('list')" [class.selected]="url === '/list'"><h3>List</h3></div>
+  <div (click)="gotourl('detail')" [class.selected]="url === '/detail'"><h3>Details</h3></div>
+</div>
+
+<div (click)="MethoddropDown('formJson')" class="dropdown-toggle">
+  Input form
+</div>
+
+<div *ngIf="dropdown === 'formJson'" class="dropdown-content">
+  <div (click)="gotourl('CreateformjsonComponent')" [class.selected]="url === '/CreateformjsonComponent'"><h3>Create Form</h3></div>
+  <div (click)="gotourl('listJson')" [class.selected]="url === '/listJson'"><h3>List Form</h3></div>
+  <div (click)="gotourl('detailJson')" [class.selected]="url === '/detailJson'"><h3>Details Form</h3></div>
+</div>

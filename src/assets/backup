@@ -1,0 +1,75 @@
+
+<div class="main"> 
+  
+    <div class="head">
+        <div (click)="gotourl('')" [class.selected]="url === '/'"><h1>Outward Remittance</h1></div>
+    </div>
+ <!--
+    <app-json-tojson></app-json-tojson> 
+    <app-input-form></app-input-form> 
+-->
+    <!--
+    <select> Json to Json
+        <option value="create"><div (click)="gotourl('create')" [class.selected]="url === '/create'">Create</div></option>
+        <option value="list"><div (click)="gotourl('list')" [class.selected]="url === '/list'">List</div></option>
+        <option value="detail"><div (click)="gotourl('detail')" [class.selected]="url === '/detail'">Detail</div></option>
+    </select>
+    -->
+   
+    <!--
+    <div class="main">
+        <div>
+          <h1>Outward Remittance</h1>
+        </div>
+      
+        <div class="dropdown">
+          <button class="dropdown-btn">Json To Json Conventer</button>
+          <div class="dropdown-content">
+            <div (click)="gotourl('create')" [class.selected]="url === '/create'">Create</div>
+            <div (click)="gotourl('list')" [class.selected]="url === '/list'">List</div>
+            <div (click)="gotourl('detail')" [class.selected]="url === '/detail'">Details</div>
+          </div>
+        </div>
+      
+        <div class="dropdown">
+          <button class="dropdown-btn">form Json Conventer</button>
+          <div class="dropdown-content">
+            <div (click)="gotourl('CreateformjsonComponent')" [class.selected]="url === '/CreateformjsonComponent'">Create Form</div>
+            <div (click)="gotourl('listJson')" [class.selected]="url === '/listJson'">List Form</div>
+            <div (click)="gotourl('detailJson')" [class.selected]="url === '/detailJson'">Details Form</div>
+          </div>
+        </div>
+      </div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div (click)="gotourl('create')" [class.selected]="url === '/create'">Create</div>
+    <div (click)="gotourl('list')" [class.selected]="url === '/list'">List</div>
+    <div (click)="gotourl('detail')" [class.selected]="url === '/detail'">Detail</div> 
+    <div (click)="gotourl('CreateformjsonComponent')" [class.selected]="url === '/CreateformjsonComponent'">Create Input Form</div>
+    <div (click)="gotourl('listJson')" [class.selected]="url==='/listJson'">List Input Form</div>
+    <div (click)="gotourl('detailJson')" [class.selected]="url==='/detailJson'">Detail Input Form</div>
+
+</div>
